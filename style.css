@@ -1,0 +1,182 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1, h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+body{
+  height: 2000px;
+}
+header{
+  padding: 10px;
+  transition: transform 0.3 ease;
+}
+#header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(building2.png);
+    background-size: cover;
+
+}
+.logo {
+    width: 260px;
+    float: right;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.container {
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: rgba(255, 187, 0, 0.807);
+    position: absolute; 
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+}
+.navbar a{
+    float: left;
+    color: #a7a7a7;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover {
+    color: rgba(255, 187, 0, 0.807);
+  }
+content{
+  padding-top: 60px;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: hidden;
+  
+
+  }
+  #topnav{
+    top: -100px;
+    transition: top 0.3 ease;
+  }
+  #topnav.show{
+    top: 0;
+  }
+  
+  /*-----button for enroll----*/
+  button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 250px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 187, 0, 0.807);
+    background: transparent;
+    color: #767676;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn {
+    background: none;
+    border: 2px solid #131b30;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 20px;
+    min-height: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4 linear;
+    background: #131b3046;
+  }
+  .btn:hover{
+    color: rgba(255, 187, 0, 0.807);
+  }
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#131b30;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7)
+  }
+  .btn1::before{
+    transform: scaleX(0);
+  }
+  .btn1:hover::before{
+    transform: scaleX(1);
+  }
+  /*-----ABOUT ACLC-------*/
+  #about{
+    padding: 600px 0;
+    color: #131b30;
+  }
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-aclc-1{
+    flex-basis:35%;
+}
+.about-aclc-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-aclc-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600%;
+    color: #FFFFFF;
+}
+
+
